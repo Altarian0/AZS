@@ -1,0 +1,19 @@
+﻿<Window x:Class="AZS.Forms.ReportForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AZS.Forms"
+        mc:Ignorable="d"
+        Title="ReportForm" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="MagazineComboBox" HorizontalAlignment="Left" FontSize="18" Margin="10,53,0,0" VerticalAlignment="Top" Width="201" Height="28" SelectionChanged="MagazineComboBox_SelectionChanged">
+            <ComboBoxItem Content="Журнал продаж"/>
+            <ComboBoxItem Content="Журнал завозов"/>
+            <ComboBoxItem Content="Журнал смен"/>
+        </ComboBox>
+        
+        <Label Content="Журналы:" FontSize="20" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="38" Width="201"/>
+        <Frame x:Name="InfoFrame" Margin="0,100,0,0" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
